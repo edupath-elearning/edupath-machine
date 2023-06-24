@@ -38,7 +38,6 @@ def chatbot(model, kdtree, answers, question):
         _, idxes = kdtree.query(vector, k=5)
         # get the answer
         answer = answers[idxes[0]]
-        print(answer)
         return answer
     except IndexError:
         answer = "Xin lỗi! Chúng tôi chưa hiểu câu hỏi của bạn"

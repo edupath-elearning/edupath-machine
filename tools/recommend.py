@@ -108,7 +108,7 @@ def recommend_communities(user_nodes, community_graph, df_skill):
                     "Blockchain",
                     "Flutter",
                 ]
-        print("")
+
         for i in range(len(maintype)):
             course = {
                 "maintype": maintype[i][0],
